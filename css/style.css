@@ -10,3 +10,15 @@ h1 {
     text-align: center;
     margin-top: 20px;
 }
+.container {
+    margin: 35px auto;
+    width: 350px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    padding: 3px;
+    background-color: lightgray;
+    border: 1px solid gray;
+}

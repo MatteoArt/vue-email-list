@@ -12,7 +12,11 @@
     <div id="app">
         <h1>Generatore email API</h1>
         <div class="container">
-            {{ mail }}
+            <ul>
+                <li v-for="mail in emailList">
+                    {{ mail }}
+                </li>
+            </ul>
         </div>
     </div>
 
