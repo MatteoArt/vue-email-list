@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue Email List</title>
+    <title>Vue Email List Bonus</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -12,8 +12,14 @@
     <div id="app">
         <h1>Generatore email API</h1>
         <div class="container">
-            <button type="button">Aggiorna lista</button>
+            <ul>
+                <li v-for="mail in emailList">
+                    {{ mail }}
+                </li>
+            </ul>
         </div>
     </div>
+
+    <script src="js/bonus.js"></script>
 </body>
 </html>
