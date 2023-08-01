@@ -12,8 +12,16 @@
     <div id="app">
         <h1>Generatore email API</h1>
         <div class="container">
-            <button type="button">Aggiorna lista</button>
+            <div class="caption">Max 10 email</div>
+            <button type="button" @click="genMailList">Aggiorna lista</button>
+            <ul v-if="(emailList.length > 0)">
+                <li v-for="mail in emailList">
+                    {{ mail }}
+                </li>
+            </ul>
         </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -16,9 +16,24 @@ h1 {
 }
 ul {
     list-style-type: none;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: lightgray;
 }
 li {
-    padding: 3px;
-    background-color: lightgray;
     border: 1px solid gray;
+    border-right: 0;
+    border-left: 0;
+    padding: 8px;
+}
+li:first-child, li:last-child {
+    border: 0;
+}
+button {
+    padding: 4px;
+    margin-bottom: 10px;
+}
+.caption {
+    font-size: 600;
+    margin-bottom: 10px;
 }
